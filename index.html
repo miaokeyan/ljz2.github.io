@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>test1</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/animate.css">
+      <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+            <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">作品展示</a></li>
+            <li><a class="smoothscroll" href="#about">基本信息</a></li>
+	         <li><a class="smoothscroll" href="#resume">科研经历</a></li>
+            <li><a class="smoothscroll" href="#portfolio">校园经历</a></li>
+            <li><a class="smoothscroll" href="#testimonials">实习经历</a></li>
+            <li><a class="smoothscroll" href="#contact">获奖情况</a></li>
+            <li><a class="smoothscroll" href="#skill">软件技能</a></li>
+            <li><a class="smoothscroll" href="#self">自我评价</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+          
+               <button type="button" onclick="dianwo()" 
+                  style="position:absolute;
+                           top:50px;
+                           left:100px;
+                           border-width: 0;
+                           float:left;">
+                  <h5>体育馆设计</h5>
+                  <h5>▼</h5>               
+                  <img src="images/con-1.jpg"  style="height:50px;width:60px;">
+               </button>
+
+
+               <button type="button" onclick="dianwo2()" style="position:absolute;
+                           top:300px;
+                           left:20px;
+                           border-width: 0;
+                           float:left;">             
+                  <img src="images/con-2.jpg" style="height:50px;width:60px;">
+                  <h5>▲</h5>
+                  <h5>住区设计</h5>                    
+               </button>
+
+               <button type="button" onclick="dianwo3()" style="position:absolute;
+                           height:50px;width:100px;
+                           border-width: 0;
+                           float:left;">             
+                  <img src="images/con-3.jpg"  style="position:left:0;height:50px;width:60px;"><h5>◀ 绿色校园</h5>                    
+               </button>
+
+               <button type="button" onclick="dianwo4()" style="position:absolute;
+                           top:600px;
+                           left:50px;
+                           border-width: 0;
+                           float:left;">             
+                  <h5>其他作品 ▶</h5>
+                  <img src="images/con-4.jpg"  style="height:50px;width:60px;">                
+               </button>
+               
+               <div class="zhezhao" id='zhezhao'>
+                  <div class="tankuang">
+                     <div id="header">
+                        <h3>体育馆设计</h3>
+                        <div id="header-right" onclick="hidder()">X</div>
+                        <a data-toggle="modal" data-target="#project-1-1">
+                           <img src="images/con1-1.png">
+                        </a>
+                         <a href="images/work1-2.png" >
+                           <img src="images/con1-2.png">
+                        </a>                        
+
+                     </div>
+                  </div>
+               </div>
+               <script type="text/javascript">
+                  document.getElementById('zhezhao').style.display="none";
+                  function dianwo(){
+                     document.getElementById('zhezhao').style.display="";
+                  }
+                  function hidder(){
+                     document.getElementById('zhezhao').style.display="none";
+                  }
+               </script>            
+                  <!-- portfolio items start -->
+                  <div class="isotope-container row grid-space-20">
+                     <div class="col-sm-6 col-md-3 isotope-item web-design">
+                        <div class="image-box">
+                           <div class="overlay-container">
+                              
+                              <a class="overlay" data-toggle="modal" data-target="#project-1-1">
+                              </a>
+                           </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="project-1-1" tabindex="-1" role="dialog" aria-labelledby="project-1-1-label" aria-hidden="true">
+                           <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title" id="project-1-1-label">体育馆建筑设计</h4>
+                                 </div>
+
+                                 <div class="modal-body">
+                                    
+                                    <div class="row">                                   
+                                       <div class="col-md-12">
+                                          <img src="images/work1-1.png" alt="">
+                                          <br/>
+                                          <h3>体育馆建筑设计</h3>
+                                          <p>二三十个字二三十个字二三十个字二三十个字二三十个字二三十个字二三十个字二三十个字二三十个字二三十个字二三十个字</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">关闭</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Modal end -->
+                     </div>
+                  </div>
+
+               <div class="zhezhao2" id='zhezhao2'>
+                  <div class="tankuang2">
+                     <div id="header">
+                        <h3>住区设计</h3>
+                        <div id="header-right" onclick="hidder2()">X</div>
+                           <img src="images/con2-1.png" id="myImg" >
+
+                        <!-- 弹窗 -->
+                        <div id="myModal" class="modal">
+                         
+                          <!-- 关闭按钮 -->
+                          <span class="close2" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                         
+                          <!-- 弹窗内容 -->
+                          <img class="modal-content" src="images/work2-1.png"  >
+                         
+                          <!-- 文本描述 -->
+                          <div id="caption">
+                             1111
+                          </div> 
+                        </div>
+
+
+                        <a href="images/work2-2.png">
+                           <img src="images/con2-2.png">
+
+                        </a> 
+                      
+
+                     </div>
+                  </div>
+               </div>
+               <script type="text/javascript">
+                  document.getElementById('zhezhao2').style.display="none";
+                  function dianwo2(){
+                     document.getElementById('zhezhao2').style.display="";
+                  }
+                  function hidder2(){
+                     document.getElementById('zhezhao2').style.display="none";
+                  }
+                                             // 获取弹窗
+                           var modal = document.getElementById('myModal');
+                            
+                           // 获取图片插入到弹窗 - 使用 "alt" 属性作为文本部分的内容
+                           var img = document.getElementById('myImg');
+                           var modalImg = document.getElementById("img01");
+                           var captionText = document.getElementById("caption");
+                           img.onclick = function(){
+                               modal.style.display = "block";
+                               modalImg.src = this.src;
+                               captionText.innerHTML = this.alt;
+                           }
+                            
+                           // 获取 <span> 元素，设置关闭按钮
+                           var span = document.getElementsByClassName("close2")[0];
+                            
+                           // 当点击 (x), 关闭弹窗
+                           span.onclick = function() { 
+                             modal.style.display = "none";
+                           }
+               </script> 
+
+         </div>
+      </div>
+
+
+   
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about">
+            <i class="icon-down-circle" style="width:60px;height:60px;color:grey;" ></i></a>
+      </p>
+   
+
+   </header> <!-- Header End -->
+
+   <section id=>
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>基本信息</h2>
+
+                  <p class="address"><br>
+                     <span>姓&emsp;&emsp;名：刘锦洲</span><br>
+                     <span>民&emsp;&emsp;族：汉<br>
+                           出生年月：1999.6.1
+                     </span><br>
+                     <span>本科院校：苏州大学</span><br>
+                     <span>就读专业：建筑学、应用心理学</span><br>
+                     <span>研究生考试报名院校：浙江大学建筑工程学院</span><br>
+                     <span>研究生考试初试分数：375</span><br>
+                     <span>研究生考试准考证号：103352000915631</span>
+                  </p>
+
+
+           
+
+               </div>
+
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+<section id="resume">
+
+      <div class="row">
+
+         <div class="nine columns main-col">
+
+            <h2>科研经历</h2><br>
+
+               <p>2018 -2020参与2018苏州大学大学生课外学术研究基金项目“吴越塔幢相关遗存建筑装饰纹样谱系研究”
+               </p>
+               <p>2020-2022负责江苏省高等学校大学生创新创业训练计划省级项目“预制装配式模块化结构在防疫应急医院的应用”</p>
+               <p>2020 -2021第一作者发表论文“校园医院空间有机更新策略研究以苏州大学新校区校医院为例”于《建筑科技》期刊</p>
+               <p>2020 -2021外观设计专利“景观柱(圆钢管原木生态环保)”及“景观柱(方钢管原木生态环保)”
+                  </p>
+
+           
+
+               </div>
+
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section>
+
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="nine columns main-col">
+
+            <h2>校园经历</h2><br>
+
+               <p>2017-2018进入金螳螂建筑学院学生会，参与举办2017新年元旦晚会，学生会公众号日常运营等
+               </p>
+               <p>2018-2020担任Tenniser网球社社长，主持举办第十五届苏州大学网球单打公开赛及第十一届网球团体公开赛</p>
+               <p>2020-2021苏州大学第十五届网球单打公开赛八强</p>
+               <p>2020-2021苏州大学金螳螂建筑学院羽毛球赛男子第三名
+                  </p>
+
+           
+
+               </div>
+
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section>
+
+      <section id="testimonials">
+
+      <div class="row">
+
+         <div class="nine columns main-col">
+
+            <h2>实习经历</h2><br>
+
+               <p>2020于君信建设工程咨询有限公司进行实习，参与十堰市三馆两中心项目。以此项目获得广联达第一届咨询企业BIM应用大赛湖北赛区第一名,全国二等奖。其中主要参与BIM模型的建构和修改，BIM平台管理， 汇报资料整合，竞赛汇报的文本和视频文件的制作。
+               </p>
+               <p>2020于十堰市建筑设计研究院参与山水绿都小区项目。其中工作内容主要包括小区总平面图的绘制、sketchup模型的建构、向甲方汇报的PPT和视频文件的制作。</p>
+               <p>2020于十堰市建筑设计研究院参与华阳厂房改造项目。其中工作内容主要包括区域的业态分析、前期方案主持设计、立项汇报文件的制作。</p>
+             
+
+           
+
+               </div>
+
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section>
+
+   <section id="contact">
+
+      <div class="row">
+
+         <div class="nine columns main-col">
+
+            <h2>获奖情况</h2><br>
+
+               <p>2017获金螳螂建筑学院征文竞赛三等奖</p>
+               <p>2019获第二届全国大学生绿色校园概念设计大赛三等奖</p>
+               <p>2020获广联达第一届咨询企业BIM应用全国二等奖</p>
+               <p>2020获发展中国家建筑设计大赛优秀奖</p>
+
+           
+
+               </div>
+
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section>
+
+
+      <section id="skill">
+
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h2><span>软件技能</span></h2><br>
+         </div>
+         <div class="nine columns main-col">
+
+            <p>基本平均优秀极佳
+            </p>
+
+            <div class="bars">
+
+
+               <ul class="skills">
+                  <li><span class="bar-expand CAD"></span><em>CAD&天正</em></li>
+                  <li><span class="bar-expand Sketchup"></span><em>Sketchup</em></li>
+                  <li><span class="bar-expand Dmax"></span><em>3Dmax</em></li>
+                  <li><span class="bar-expand Lumion"></span><em>Lumion</em></li>
+                  <li><span class="bar-expand html5"></span><em>Photoshop</em></li>
+                  <li><span class="bar-expand jquery"></span><em>Illustrator</em></li>
+                  <li><span class="bar-expand V-ray"></span><em>V-ray</em></li>
+                  <li><span class="bar-expand Rhino"></span><em>Rhino</em></li>
+                  <li><span class="bar-expand Grasshopper"></span><em>Grasshopper</em></li>
+                  <li><span class="bar-expand Revit"></span><em>Revit</em></li>
+                  <li><span class="bar-expand Premiere"></span><em>Premiere</em></li>
+                  <li><span class="bar-expand 斯维尔绿建系列"></span><em>斯维尔绿建系列</em></li>
+                  <li><span class="bar-expand 广联达及其BIM平台"></span><em>广联达及其BIM平台</em></li>
+                  <li><span class="bar-expand 无人机操作"></span><em>无人机操作</em></li>
+
+               </ul>
+
+            </div><!-- end skill-bars -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+ 
+   <section id="self">
+
+      <div class="row">
+
+         <div class="nine columns main-col">
+
+            <h2>自我评价</h2><br>
+
+               <p>对建筑学,尤其是建筑节能和数字建筑方面,有浓厚的学习兴趣,对建筑设计和技术保持高度敏感度,有继续深入研究的愿望;</p>
+               <p>为人积极乐观,心态好,适应能力强,抗压能力强,能和身边的人很好相处。学习勤奋,有很强的进取心,做事认真负责,有一定的组织和领导能力,善于发现问题,对新鲜事物充满好奇心; </p>
+               <p>本科阶段的学习让我意识到了建筑不仅是经济效益的体现,更重要的是肩负了一定区域的社会责任。在我国经济发展转入存量经济的今天,我深刻感受到当今建筑行业由于其本身体量大导致的人力荒、转型难等问题有待解决。故希望继续在该学科进行深入研究学习,为社会建设作出自己的贡献。</p>
+             
+           
+
+               </div>
+
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section>
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+      <script type="text/javascript" src="plugins/jquery.min.js"></script>
+      <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="plugins/modernizr.js"></script>
+      <script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+      <script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+      <script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+</body>
+
+</html>
